@@ -8,7 +8,28 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    
+    <div class="loader" id="loader"></div>
+
+    <div class="search-form-wrapper">
+      <form action="submit" class="search-form js-search-form">
+        <div class="form-group">
+          <input
+            type="text"
+            name="search"
+            class="search-input"
+            autocomplete="off"
+            placeholder="Search images..."
+            required
+          />
+          <button class="search-btn">Search</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="gallery-group">
+      <ul class="gallery"></ul>
+    </div>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
